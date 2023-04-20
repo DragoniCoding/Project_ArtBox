@@ -2,10 +2,10 @@
 
 ## Needs to Have
 
-- hhanna
-- mreown
+- canvas capabilities
+- draw and erase
 
 ## Nice to Have
 
-- ahhaanna
-- meon
+- different art tools
+- 
