@@ -1,8 +1,8 @@
-## Major Project(Tom)
+## Major Project(or Tom)
 
 ## Project Description
 
-- I aim to create an Art Application that you can use to draw and save photos
+- I aim to create an Art Application that you can use to draw and then save the drawings to your computer from your browser
 
 ## Needs to Have
 
