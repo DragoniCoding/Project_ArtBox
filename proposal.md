@@ -14,6 +14,7 @@
 
 - color selection (further version is color generator(user creates the color to use))
 - different art tools
+- width selection
 - Vector Methods (select, flip, rotate)
 - the abilty to load
 - forward and backward page states
