@@ -7,16 +7,17 @@
 ## Needs to Have
 
 - canvas capabilities
-- draw and erase
-- the ability to save
+- draw
+- erase
+- the ability to save (simple screenshot of canvas)
+- different art tools
 
 ## Nice to Have
 
 - color selection (further version is color generator(user creates the color to use))
-- different art tools
 - width selection
 - Vector Methods (select, flip, rotate)
-- the abilty to load
+- the abilty to load (the ability to take an image and add drawings)
 - forward and backward page states
 - tool sfx
 
