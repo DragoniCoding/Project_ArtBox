@@ -7,8 +7,13 @@
 ## Needs to Have
 
 - canvas capabilities
+    - you start by selecting the canvas size, then can alter it it.
+    - if you reduce the canvas to not include a drawing, drawing will be deleted and will not appear if extended again
 - draw
-- erase
+    - draw on the canvas
+- erase 
+    - deletes the drawings that exist in the space of the curser
+    - or replaces the shape entry with another shape
 - the ability to save (simple screenshot of canvas)
 - different art tools
 
@@ -17,7 +22,8 @@
 - color selection (further version is color generator(user creates the color to use))
 - width selection
 - Vector Methods (select, flip, rotate)
-- the abilty to load (the ability to take an image and add drawings)
+- the abilty to load (the ability to take an image, put it as the background, and add drawings)
 - forward and backward page states
 - tool sfx
+- mouse img changes depending on current ability
 
