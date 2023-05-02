@@ -24,12 +24,20 @@ class button {
 }
 
 let drawColor = "black";
+let test;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  background(55);
+  test = createButton("testcase");
+  test.position(25, 25);
+  test.mouseOver(party);
 }
 
 function draw() {
-  background(220);
-  rect(mouseX, mouseY, 15, 20);
+}
+
+function party() {
+  let val = color(random(255), random(255), random(255));
+  background(val);
 }
