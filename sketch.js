@@ -39,5 +39,5 @@ function draw() {
 
 function party() {
   let val = color(random(255), random(255), random(255));
-  background(val);
+  test.colour(val);
 }
