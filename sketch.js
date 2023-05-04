@@ -6,19 +6,30 @@
 // - describe what you did to take this project "above and beyond"
 
 class button {
-  constructor(x, y, length, wideth, colour){ //what makes up the button
+  constructor(x, y, length, wideth, img){ //what makes up the button
     this.x = x;
     this.y = y;
     this.length = length;
     this.wideth = wideth;
-    this.colour = colour;
+    this.img = img;
   }
 
   display(){ // displaying the button
-    fill(this.colour);
-    rect(this.x, this.y, this.wideth, this.length);
+    image(this.img, this.x, this.y, this.wideth, this.length);
   }
   isPressed(){
+
+  }
+}
+
+class pen {
+  constructor(x, y, type) {
+    this.y = y;
+    this.x = x;
+    this.type = type;
+  }
+
+  display() {
 
   }
 }

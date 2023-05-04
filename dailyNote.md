@@ -20,3 +20,6 @@
 - searched through p5.Play, checking for draw or erase methods (there were none)
 - found a few button repositories to use
 - found a pretty good UI repo
+
+## May the 4th (be with you,for it is not with me) 
+- worked on setting up class for the buttons, looked into coler picker and color selection
