@@ -23,3 +23,11 @@
 
 ## May the 4th (be with you,for it is not with me) 
 - worked on setting up class for the buttons, looked into coler picker and color selection
+
+## May 5
+- forgot to make notes, focused on auctually coding
+- made pen class, dying inside
+
+## May 8
+- found pmouse variable and winmouse variable, thinking of how to use those
+- fleshed out pen class, still dying inside

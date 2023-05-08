@@ -23,13 +23,21 @@ class button {
 }
 
 class pen {
-  constructor(x, y, type) {
+  constructor(x, y, size) {
     this.y = y;
     this.x = x;
-    this.type = type;
+    this.size = size;
   }
 
   display() {
+
+  }
+  drawing(type) {
+    if (mouseIsPressed) {
+      if (type === "circle") {
+        circle(mouseX, mouseY, this.size);
+      }
+    }
 
   }
 }
@@ -38,17 +46,10 @@ let drawColor = "black";
 let test;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(500, 500);
   background(55);
-  test = createButton("testcase");
-  test.position(25, 25);
-  test.mouseOver(party);
 }
 
 function draw() {
-}
 
-function party() {
-  let val = color(random(255), random(255), random(255));
-  test.colour(val);
 }
