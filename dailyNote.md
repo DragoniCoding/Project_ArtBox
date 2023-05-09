@@ -31,3 +31,7 @@
 ## May 8
 - found pmouse variable and winmouse variable, thinking of how to use those
 - fleshed out pen class, still dying inside
+
+## may 9
+- OOP practice quiz
+- had to explain my lack of code set up
