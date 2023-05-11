@@ -32,6 +32,16 @@
 - found pmouse variable and winmouse variable, thinking of how to use those
 - fleshed out pen class, still dying inside
 
-## may 9
+## May 9
 - OOP practice quiz
 - had to explain my lack of code set up
+
+## May 10
+- OOP quiz
+- finished project progress reports
+- short demo on using vectors in coding
+
+## May 11
+- map intro
+-tried beating a learning algorithm
+- draw() function manipulation and understanding button and checkbox (check isLooping())
