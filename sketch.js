@@ -30,15 +30,14 @@ class pen {
   }
 
   display() {
-
-  }
-  drawing(type) {
     if (mouseIsPressed) {
-      if (type === "circle") {
+      if (this.type === "circle") {
         circle(mouseX, mouseY, this.size);
       }
     }
-
+  }
+  drawing(type) {
+    this.type = type;
   }
 }
 

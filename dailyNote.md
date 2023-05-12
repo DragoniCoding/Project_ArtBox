@@ -45,3 +45,8 @@
 - map intro
 -tried beating a learning algorithm
 - draw() function manipulation and understanding button and checkbox (check isLooping())
+
+## May 12
+- fixed pen.display(), still need to finish it up
+- made freesound account
+- searched through freesound for button sfx, found a few I might use
