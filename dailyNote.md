@@ -50,3 +50,8 @@
 - fixed pen.display(), still need to finish it up
 - made freesound account
 - searched through freesound for button sfx, found a few I might use
+
+## May 15
+- i'm dyingggg, my brain keeps going back to the * *bad thoughts* *
+- map practice
+- made a button ima try... once i have an image for it

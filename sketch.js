@@ -43,10 +43,16 @@ class pen {
 
 let drawColor = "black";
 let test;
+let testImg;
+
+function preload() {
+  
+}
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(1000, 1000);
   background(55);
+//  test = new button(250, -200, 50, 50, assets/);
 }
 
 function draw() {
