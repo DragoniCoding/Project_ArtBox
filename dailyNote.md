@@ -55,3 +55,9 @@
 - i'm dyingggg, my brain keeps going back to the * *bad thoughts* *
 - map practice
 - made a button ima try... once i have an image for it
+
+## May 16
+- mentality is better
+- more map practice
+- testin the buttons
+- none of them worked...

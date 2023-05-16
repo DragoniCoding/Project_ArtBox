@@ -44,17 +44,27 @@ class pen {
 let drawColor = "black";
 let test;
 let testImg;
+let testP5;
 
 function preload() {
-  
+  testImg = loadImage("assets/pixilart-drawing.png");
 }
 
 function setup() {
   createCanvas(1000, 1000);
   background(55);
-//  test = new button(250, -200, 50, 50, assets/);
+  test = new button(250, -200, 50, 50, testImg);
+  testP5 = createButton("tester");
+  testP5.position(0, -55);
+  testP5.mouseOver(upppp);
 }
 
 function draw() {
+  test.display();
+}
 
+function upppp() {
+  let val = 0;
+  val++;
+  background(val);
 }
