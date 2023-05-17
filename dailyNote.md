@@ -61,3 +61,8 @@
 - more map practice
 - testin the buttons
 - none of them worked...
+
+## May 17
+- ima dieeee, i gotta relearn how to make websitessss
+- even more map practice
+-ahhhhhhhhhhhhhh
