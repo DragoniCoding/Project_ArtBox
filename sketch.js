@@ -53,18 +53,17 @@ function preload() {
 function setup() {
   createCanvas(1000, 1000);
   background(55);
-  test = new button(250, -200, 50, 50, testImg);
-  testP5 = createButton("tester");
-  testP5.position(0, -55);
-  testP5.mouseOver(upppp);
+  test = new button(250, 1050, 50, 50, testImg);
+  testP5 = createButton("Success");
+  testP5.position(0, 55);
+  testP5.mousePressed(upppp);
 }
 
 function draw() {
   test.display();
 }
-
+let val = 255;
 function upppp() {
-  let val = 0;
-  val++;
+  val -= 30;
   background(val);
 }

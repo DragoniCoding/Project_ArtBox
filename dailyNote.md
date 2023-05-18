@@ -66,3 +66,10 @@
 - ima dieeee, i gotta relearn how to make websitessss
 - even more map practice
 -ahhhhhhhhhhhhhh
+
+## May 18
+- mentality is really good, tho my body has been trying to rebel against me throughout today
+- maps
+- relearning how to do HTML and css
+gonna try the bottom of the canvas this time
+- so apparentally, both work, it's just that for buttons top right corner is <em>alwayysss</em> 0, 0. not the 0, 0 of the canvas (T_T)
