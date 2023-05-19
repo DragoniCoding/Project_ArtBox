@@ -5,23 +5,6 @@
 // Extra for Experts:
 // - describe what you did to take this project "above and beyond"
 
-class button {
-  constructor(x, y, length, wideth, img){ //what makes up the button
-    this.x = x;
-    this.y = y;
-    this.length = length;
-    this.wideth = wideth;
-    this.img = img;
-  }
-
-  display(){ // displaying the button
-    image(this.img, this.x, this.y, this.wideth, this.length);
-  }
-  isPressed(){
-
-  }
-}
-
 class pen {
   constructor(x, y, size) {
     this.y = y;
@@ -42,7 +25,6 @@ class pen {
 }
 
 let drawColor = "black";
-let test;
 let testImg;
 let testP5;
 
@@ -53,15 +35,13 @@ function preload() {
 function setup() {
   createCanvas(1000, 1000);
   background(55);
-  test = new button(250, 1050, 50, 50, testImg);
   testP5 = createButton("Success");
   testP5.position(0, 55);
   testP5.mousePressed(upppp);
+  testP5.html();
 }
 
-function draw() {
-  test.display();
-}
+
 let val = 255;
 function upppp() {
   val -= 30;

@@ -72,4 +72,9 @@
 - maps
 - relearning how to do HTML and css
 gonna try the bottom of the canvas this time
-- so apparentally, both work, it's just that for buttons top right corner is <em>alwayysss</em> 0, 0. not the 0, 0 of the canvas (T_T)
+- so apparentally, both work, it's just that for buttons top right corner is *alwayysss* 0, 0. not the 0, 0 of the canvas (T_T)
+
+## May 19
+- I feel trapped, my mentality is fearful and ..*cold*, emergency comfort item isn't where i thought it was, so iam just sufer, like im sopposed to!
+- maps ar hardddd
+objects self made are tied to canvas 0, 0
