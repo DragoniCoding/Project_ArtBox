@@ -78,3 +78,14 @@ gonna try the bottom of the canvas this time
 - I feel trapped, my mentality is fearful and ..*cold*, emergency comfort item isn't where i thought it was, so iam just sufer, like im sopposed to!
 - maps ar hardddd
 objects self made are tied to canvas 0, 0
+
+## May 23
+- map practice quiz
+- trying to figure out if i can give my buttons images
+- doesn't look like it
+
+## May 24
+- maps quiz
+- radio() and colorPicker() are looking rather useful
+- need to see if i can put images in the margin or padding
+- p5.polar is defintily looking usel, will add once pen() works

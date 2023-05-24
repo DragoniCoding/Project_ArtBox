@@ -25,20 +25,18 @@ class pen {
 }
 
 let drawColor = "black";
-let testImg;
-let testP5;
+let testP5, testImg, rad, colPick;
 
 function preload() {
   testImg = loadImage("assets/pixilart-drawing.png");
 }
 
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(windowWidth/1.05, windowHeight/1.5);
   background(55);
   testP5 = createButton("Success");
   testP5.position(0, 55);
   testP5.mousePressed(upppp);
-  testP5.html();
 }
 
 
