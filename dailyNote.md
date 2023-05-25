@@ -89,3 +89,8 @@ objects self made are tied to canvas 0, 0
 - radio() and colorPicker() are looking rather useful
 - need to see if i can put images in the margin or padding
 - p5.polar is defintily looking usel, will add once pen() works
+
+## May 25
+- recursion demo, has something to do with paint bucket via a flood fill algorithym (need to search up)
+- can't put loadImage(), but createImg() works!
+- the DOM category is my best freind

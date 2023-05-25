@@ -28,7 +28,7 @@ let drawColor = "black";
 let testP5, testImg, rad, colPick;
 
 function preload() {
-  testImg = loadImage("assets/pixilart-drawing.png");
+  testImg = createImg("assets/pixilart-drawing.png", "test fail");
 }
 
 function setup() {
@@ -37,6 +37,7 @@ function setup() {
   testP5 = createButton("Success");
   testP5.position(0, 55);
   testP5.mousePressed(upppp);
+  testImg.position(70, 55);
 }
 
 
