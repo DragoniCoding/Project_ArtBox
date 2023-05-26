@@ -94,3 +94,7 @@ objects self made are tied to canvas 0, 0
 - recursion demo, has something to do with paint bucket via a flood fill algorithym (need to search up)
 - can't put loadImage(), but createImg() works!
 - the DOM category is my best freind
+
+## May 26
+- recursion practice.... I think I might fail a test for once
+- ***STILL*** need to make the pen functional
