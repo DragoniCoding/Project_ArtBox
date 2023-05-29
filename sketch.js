@@ -10,12 +10,12 @@ class pen {
     this.y = y;
     this.x = x;
     this.size = size;
-    this.drewArray = [];
   }
 
   display() {
     if (mouseIsPressed) {
-      if (this.type === "circle") {
+      if (this.type === "pencil") {
+        circle(pmouseX, pmouseY, this.size);
         circle(mouseX, mouseY, this.size);
       }
       if (this.type === "chizel") {
@@ -25,7 +25,7 @@ class pen {
         line(mouseX, mouseY, mouseX, mouseY);
       }
       if (this.type === "fancyLeft") {
-        circle(mouseX, mouseY, this.size);
+        circle(mouseX-5, mouseY-5, mouseX+5, mouseY+5);
       }
     }
   }
@@ -36,14 +36,27 @@ class pen {
 
 let drawColor = "black";
 let penImg, penRadio, colPick;
+let thePen;
+let canvasW = prompt("How big do you want you're drawing's width?", 1000);
+let canvasH = prompt("How big do you want you're drawing's Height?", 1000);
 
 function preload() {
   penImg = createImg("assets/pixilart-drawing.png", "pen fail");
+  penRadio = createRadio();
+  penRadio.position(400, 30);
+  penRadio.center("vertical");
+  penRadio.option("pencil", "Pencil");
+  penRadio.option("chizel", "Chizel");
+  penRadio.option("fancyRight", "Calligraphy Forward");
+  penRadio.option("fancyLeft", "Calligraphy Backward");
 }
 
 function setup() {
-  createCanvas(windowWidth/1.05, windowHeight/1.5);
+  createCanvas(canvasW, canvasH);
   background(55);
   penImg.position(70, 55);
 }
 
+function draw() {
+
+}

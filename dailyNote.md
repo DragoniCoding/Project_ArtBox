@@ -100,3 +100,8 @@ objects self made are tied to canvas 0, 0
 - ***STILL*** need to make the pen functional
 - let's not talk about the eraser
 - check in, big dump of panic and feelings of innsuffinceincy (english is hard)
+
+## May 29
+- recursion practice, feeling moderately better about not failing the test
+- mentality is... not the worst, but definitly not good, but I'm more focused on my revolting digestive system
+- got the pen more fleshed out, FINALLY have a method of asking things before loading
