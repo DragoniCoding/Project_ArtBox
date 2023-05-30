@@ -5,11 +5,10 @@
 // Extra for Experts:
 // - describe what you did to take this project "above and beyond"
 
-class pen {
-  constructor(x, y, size) {
-    this.y = y;
-    this.x = x;
+class Pen {
+  constructor(size, type) {
     this.size = size;
+    this.type = type;
   }
 
   display() {
@@ -29,19 +28,19 @@ class pen {
       }
     }
   }
-  drawing(type) {
-    this.type = type;
-  }
 }
 
 let drawColor = "black";
-let penImg, penRadio, colPick;
-let thePen;
+let thePen, penImg, penRadio, penSlide, colPick;
+
 let canvasW = prompt("How big do you want you're drawing's width?", 1000);
 let canvasH = prompt("How big do you want you're drawing's Height?", 1000);
 
 function preload() {
+  // img
   penImg = createImg("assets/pixilart-drawing.png", "pen fail");
+  
+  // Pen Radio (option selector)
   penRadio = createRadio();
   penRadio.position(400, 30);
   penRadio.center("vertical");

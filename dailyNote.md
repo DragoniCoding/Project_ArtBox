@@ -105,3 +105,8 @@ objects self made are tied to canvas 0, 0
 - recursion practice, feeling moderately better about not failing the test
 - mentality is... not the worst, but definitly not good, but I'm more focused on my revolting digestive system
 - got the pen more fleshed out, FINALLY have a method of asking things before loading
+
+## May 30
+- some recursion practice and demos
+- working on the pen, started setting up the width slider
+- started adding a few comments
