@@ -110,3 +110,7 @@ objects self made are tied to canvas 0, 0
 - some recursion practice and demos
 - working on the pen, started setting up the width slider
 - started adding a few comments
+
+## May 31
+- worked on making more graphics... it failed 
+- I am A horrible Artist
