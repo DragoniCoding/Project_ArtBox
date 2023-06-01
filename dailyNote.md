@@ -114,3 +114,6 @@ objects self made are tied to canvas 0, 0
 ## May 31
 - worked on making more graphics... it failed 
 - I am A horrible Artist
+
+## June 1
+- ... what the *__frick__* is going on with the pen

@@ -17,13 +17,13 @@ class Pen {
         circle(pmouseX, pmouseY, this.size);
         circle(mouseX, mouseY, this.size);
       }
-      if (this.type === "chizel") {
+      else if (this.type === "chizel") {
         rect(mouseX, mouseY, this.size);
       }
-      if (this.type === "fancyRight") {
+      else if (this.type === "fancyRight") {
         line(mouseX, mouseY, mouseX, mouseY);
       }
-      if (this.type === "fancyLeft") {
+      else if (this.type === "fancyLeft") {
         circle(mouseX-5, mouseY-5, mouseX+5, mouseY+5);
       }
     }
@@ -37,25 +37,33 @@ let canvasW = prompt("How big do you want you're drawing's width?", 1000);
 let canvasH = prompt("How big do you want you're drawing's Height?", 1000);
 
 function preload() {
-  // img
-  penImg = createImg("assets/pixilart-drawing.png", "pen fail");
-  
-  // Pen Radio (option selector)
-  penRadio = createRadio();
-  penRadio.position(400, 30);
-  penRadio.center("vertical");
-  penRadio.option("pencil", "Pencil");
-  penRadio.option("chizel", "Chizel");
-  penRadio.option("fancyRight", "Calligraphy Forward");
-  penRadio.option("fancyLeft", "Calligraphy Backward");
+  penImg = createImg("assets/pixilart-drawing.png", "fuck");
 }
 
 function setup() {
   createCanvas(canvasW, canvasH);
   background(55);
   penImg.position(70, 55);
+  // img
+  penImg = createImg("assets/pixilart-drawing.png", "pen fail");
+
+  // Pen Radio (option selector)
+  penRadio = createRadio();
+  penRadio.position(0, 0);
+  penRadio.center("vertical");
+  penRadio.option("pencil", "Pencil");
+  penRadio.option("chizel", "Chizel");
+  penRadio.option("fancyRight", "Calligraphy Forward");
+  penRadio.option("fancyLeft", "Calligraphy Backward");
+
+  //Width adjuster 
+  penSlide = 5;
+
+  //The Pen (du dun)
+  thePen = new Pen(penSlide, penRadio.value());
 }
 
 function draw() {
-
+  fill("green");
+  thePen.display();
 }
