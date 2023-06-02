@@ -117,3 +117,7 @@ objects self made are tied to canvas 0, 0
 
 ## June 1
 - ... what the *__frick__* is going on with the pen
+
+## June 2
+- fixed the pen, changed it to a function
+- I'm frickin dying, myproject is barely done, and I have a week to finish

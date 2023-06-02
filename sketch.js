@@ -5,65 +5,65 @@
 // Extra for Experts:
 // - describe what you did to take this project "above and beyond"
 
-class Pen {
-  constructor(size, type) {
-    this.size = size;
-    this.type = type;
-  }
 
-  display() {
-    if (mouseIsPressed) {
-      if (this.type === "pencil") {
-        circle(pmouseX, pmouseY, this.size);
-        circle(mouseX, mouseY, this.size);
-      }
-      else if (this.type === "chizel") {
-        rect(mouseX, mouseY, this.size);
-      }
-      else if (this.type === "fancyRight") {
-        line(mouseX, mouseY, mouseX, mouseY);
-      }
-      else if (this.type === "fancyLeft") {
-        circle(mouseX-5, mouseY-5, mouseX+5, mouseY+5);
-      }
-    }
-  }
-}
+
 
 let drawColor = "black";
-let thePen, penImg, penRadio, penSlide, colPick;
+let penImg, penRadio, penSlide, colPick, backPick;
 
 let canvasW = prompt("How big do you want you're drawing's width?", 1000);
 let canvasH = prompt("How big do you want you're drawing's Height?", 1000);
 
 function preload() {
   penImg = createImg("assets/pixilart-drawing.png", "fuck");
+  
+  // Pen Radio (option selector)
+  penRadio = createRadio();
+  penRadio.position(500, 50);
+  penRadio.center("vertical");
+  penRadio.option("pencil", "Pencil");
+  penRadio.option("eraser", "Eraser");
+  penRadio.option("chizel", "Chizel");
+  penRadio.option("fancyRight", "Calligraphy Forward");
+  penRadio.option("fancyLeft", "Calligraphy Backward");
+
+  //Background picker
 }
 
 function setup() {
   createCanvas(canvasW, canvasH);
   background(55);
-  penImg.position(70, 55);
+  noStroke();
+
   // img
+  penImg.position(70, 55);
   penImg = createImg("assets/pixilart-drawing.png", "pen fail");
 
-  // Pen Radio (option selector)
-  penRadio = createRadio();
-  penRadio.position(0, 0);
-  penRadio.center("vertical");
-  penRadio.option("pencil", "Pencil");
-  penRadio.option("chizel", "Chizel");
-  penRadio.option("fancyRight", "Calligraphy Forward");
-  penRadio.option("fancyLeft", "Calligraphy Backward");
-
   //Width adjuster 
-  penSlide = 5;
-
-  //The Pen (du dun)
-  thePen = new Pen(penSlide, penRadio.value());
+  penSlide = createSlider(1, 20, 3);
+  penSlide.position(0, 0);
 }
 
 function draw() {
   fill("green");
-  thePen.display();
+  display(penSlide.value(), penRadio.value());
+}
+
+function display(size, type) {
+  if (mouseIsPressed) {
+    if (type === "pencil") {
+      circle(pmouseX, pmouseY, size);
+      circle(mouseX, mouseY, size);
+    }
+    else if (type === "chizel") {
+      rect(pmouseX, pmouseY, size);
+      rect(mouseX, mouseY, size);
+    }
+    else if (type === "fancyRight") {
+      line(pmouseX + size, pmouseY +size, mouseX+size, mouseY+size);
+    }
+    else if (type === "fancyLeft") {
+      line(pmouseX-size, pmouseY+size, mouseX+size, mouseY-size);
+    }
+  }
 }
