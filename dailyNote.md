@@ -121,3 +121,8 @@ objects self made are tied to canvas 0, 0
 ## June 2
 - fixed the pen, changed it to a function
 - I'm frickin dying, myproject is barely done, and I have a week to finish
+
+## June 5
+- hi again, still don't beleive i'll finish it, but I'm confident I can BS my way throught the prez
+- finally figured out *fancy pens*
+- working on color next

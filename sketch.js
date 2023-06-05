@@ -60,10 +60,16 @@ function display(size, type) {
       rect(mouseX, mouseY, size);
     }
     else if (type === "fancyRight") {
-      line(pmouseX + size, pmouseY +size, mouseX+size, mouseY+size);
+      stroke("green");
+      strokeWeight(size);
+      line(pmouseX, pmouseY, mouseX, mouseY);
+      noStroke();
     }
     else if (type === "fancyLeft") {
-      line(pmouseX-size, pmouseY+size, mouseX+size, mouseY-size);
+      stroke("green");
+      strokeWeight(size);
+      line(mouseX-size, mouseY+size, mouseX+size, mouseY-size);
+      noStroke();
     }
   }
 }
