@@ -28,11 +28,13 @@ function preload() {
   penRadio.option("fancyLeft", "Calligraphy Backward");
 
   //Background picker
+  backPick = createColorPicker("#f8f8ff");
+  backPick.position(200, 20);
 }
 
 function setup() {
   createCanvas(canvasW, canvasH);
-  background(55);
+  background(backPick.value());
   noStroke();
 
   // img

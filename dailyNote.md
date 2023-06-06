@@ -126,3 +126,6 @@ objects self made are tied to canvas 0, 0
 - hi again, still don't beleive i'll finish it, but I'm confident I can BS my way throught the prez
 - finally figured out *fancy pens*
 - working on color next
+
+## June 6
+- started on background color pick
