@@ -129,3 +129,9 @@ objects self made are tied to canvas 0, 0
 
 ## June 6
 - started on background color pick
+
+## June 7
+- background comes after I finish connecting the coulor selector selector to the pens
+- AHHHHHHHHHH
+- dont mind that
+- cleaning up the setup by making everything it's own function (·ω·)
