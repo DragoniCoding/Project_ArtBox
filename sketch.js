@@ -17,23 +17,8 @@ let canvasH = prompt("How big do you want you're drawing's Height?", 1000);
 function preload() {
   penImg = createImg("assets/pixilart-drawing.png", "fuck");
   
-  // Pen Radio (option selector)
-  penRadio = createRadio();
-  penRadio.position(500, 50);
-  penRadio.center("vertical");
-  penRadio.option("pencil", "Pencil");
-  penRadio.option("eraser", "Eraser");
-  penRadio.option("chizel", "Chizel");
-  penRadio.option("fancyRight", "Calligraphy Forward");
-  penRadio.option("fancyLeft", "Calligraphy Backward");
-
-  //Background picker
-  backPick = createColorPicker("#f8f8ff");
-  backPick.position(200, 20);
-
-  //Background picker
-  colPick = createColorPicker("#eeeeee");
-  colPick.position(260, 20);
+  radioSet();
+  colouring();
 }
 
 function setup() {
@@ -54,6 +39,10 @@ function draw() {
   display(penSlide.value(), penRadio.value());
 }
 
+function windowResized() {
+  resizeCanvas(canvasW, canvasH, true);
+}
+
 function display(size, type) {
   if (mouseIsPressed) {
     if (type === "pencil") {
@@ -61,6 +50,12 @@ function display(size, type) {
       fill(colPick.value());
       circle(pmouseX, pmouseY, size);
       circle(mouseX, mouseY, size);
+      pop();
+    }
+    else if (type === "eraser") {
+      push();
+      fill(backPick.value());
+      rect(mouseX, mouseY, size);
       pop();
     }
     else if (type === "chizel") {
@@ -88,5 +83,24 @@ function display(size, type) {
 }
 
 function radioSet() {
-  
+  // Pen Radio (option selector)
+  penRadio = createRadio();
+  penRadio.position(windowWidth/2, windowHeight/55);
+  penRadio.center("vertical");
+  penRadio.option("pencil", "Pencil");
+  penRadio.option("eraser", "Eraser");
+  penRadio.option("chizel", "Chizel");
+  penRadio.option("fancyRight", "Calligraphy Forward");
+  penRadio.option("fancyLeft", "Calligraphy Backward");
+  penRadio.selected("2");
+}
+
+function colouring() {
+  //Background picker
+  backPick = createColorPicker("#f8f8ff");
+  backPick.position(200, 20);
+
+  //Pen picker
+  colPick = createColorPicker("#eeeeee");
+  colPick.position(260, 20);
 }

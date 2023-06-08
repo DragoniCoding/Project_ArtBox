@@ -135,3 +135,8 @@ objects self made are tied to canvas 0, 0
 - AHHHHHHHHHH
 - dont mind that
 - cleaning up the setup by making everything it's own function (·ω·)
+
+## June 8
+- sorting quiz
+- working on the canvas and detailing/ instructions
+- still need to make the eraser
