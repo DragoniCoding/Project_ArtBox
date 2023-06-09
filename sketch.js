@@ -9,13 +9,14 @@
 
 
 let drawColor = "black";
-let penImg, penRadio, penSlide, colPick, backPick, backSelect;
+let penImg1;
+let penRadio, penSlide, colPick, backPick, backSelect;
 
 let canvasW = prompt("How big do you want you're drawing's width?", 1000);
 let canvasH = prompt("How big do you want you're drawing's Height?", 1000);
 
 function preload() {
-  penImg = createImg("assets/pixilart-drawing.png", "fuck");
+  penImg1 = createImg("assets/pixilart-drawing.png", "fuck");
   
   radioSet();
   colouring();
@@ -27,20 +28,15 @@ function setup() {
   noStroke();
 
   // img
-  penImg.position(70, 55);
-  penImg = createImg("assets/pixilart-drawing.png", "pen fail");
+  penImg1.position(windowWidth/1.62, windowHeight/16);
 
   //Width adjuster 
   penSlide = createSlider(1, 20, 3);
-  penSlide.position(0, 0);
+  penSlide.position(windowWidth*0.05, 0);
 }
 
 function draw() {
   display(penSlide.value(), penRadio.value());
-}
-
-function windowResized() {
-  resizeCanvas(canvasW, canvasH, true);
 }
 
 function display(size, type) {

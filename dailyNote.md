@@ -140,3 +140,8 @@ objects self made are tied to canvas 0, 0
 - sorting quiz
 - working on the canvas and detailing/ instructions
 - still need to make the eraser
+
+## June 9
+- mmm... my brain is being very... harmful
+- worked on making the positions more variable depending on window W & H
+- 
