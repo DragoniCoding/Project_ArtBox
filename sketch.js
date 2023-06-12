@@ -10,7 +10,7 @@
 
 let drawColor = "black";
 let penImg1;
-let penRadio, penSlide, colPick, backPick, backSelect;
+let penRadio, penSlide, colPick, backPick, backSelect, canvasClear;
 
 let canvasW = prompt("How big do you want you're drawing's width?", 1000);
 let canvasH = prompt("How big do you want you're drawing's Height?", 1000);
@@ -33,9 +33,14 @@ function setup() {
   //Width adjuster 
   penSlide = createSlider(1, 20, 3);
   penSlide.position(windowWidth*0.05, 0);
+
+  // Canvas clear
+  canvasClear = createButton("Clear Canvas");
+  canvasClear.position(windowWidth*0.04, windowHeight*0.10);
 }
 
 function draw() {
+  frameRate(64);
   display(penSlide.value(), penRadio.value());
 }
 

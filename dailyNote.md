@@ -144,4 +144,7 @@ objects self made are tied to canvas 0, 0
 ## June 9
 - mmm... my brain is being very... harmful
 - worked on making the positions more variable depending on window W & H
-- 
+- it didn't work?
+
+## June 12
+- created canvas clear
