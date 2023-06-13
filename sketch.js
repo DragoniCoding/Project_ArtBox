@@ -1,6 +1,6 @@
-// Project Title
-// Your Name
-// Date
+// ArtBox
+// Aidan Thorpe
+// ? - June 20, 2023
 //
 // Extra for Experts:
 // - describe what you did to take this project "above and beyond"
@@ -8,15 +8,12 @@
 
 
 
-let drawColor = "black";
-let penImg1;
 let penRadio, penSlide, colPick, backPick, backSelect, canvasClear;
 
 let canvasW = prompt("How big do you want you're drawing's width?", 1000);
 let canvasH = prompt("How big do you want you're drawing's Height?", 1000);
 
 function preload() {
-  penImg1 = createImg("assets/pixilart-drawing.png", "fuck");
   
   radioSet();
   colouring();
@@ -27,9 +24,6 @@ function setup() {
   background(backPick.value());
   noStroke();
 
-  // img
-  penImg1.position(windowWidth/1.62, windowHeight/16);
-
   //Width adjuster 
   penSlide = createSlider(1, 20, 3);
   penSlide.position(windowWidth*0.05, 0);
@@ -37,10 +31,10 @@ function setup() {
   // Canvas clear
   canvasClear = createButton("Clear Canvas");
   canvasClear.position(windowWidth*0.04, windowHeight*0.10);
+  canvasClear.mousePressed(cleared);
 }
 
 function draw() {
-  frameRate(64);
   display(penSlide.value(), penRadio.value());
 }
 
@@ -56,28 +50,30 @@ function display(size, type) {
     else if (type === "eraser") {
       push();
       fill(backPick.value());
-      rect(mouseX, mouseY, size);
+      rect(mouseX, mouseY, size*3);
       pop();
     }
     else if (type === "chizel") {
       push();
+      angleMode("DEGREES");
+      translate(mouseX, mouseY);
+      rotate(120);
       fill(colPick.value());
-      rect(pmouseX, pmouseY, size);
-      rect(mouseX, mouseY, size);
+      rect(0, 0, size);
       pop();
     }
     else if (type === "fancyRight") {
       push();
       stroke(colPick.value());
-      strokeWeight(size);
-      line(mouseX - 5, mouseY +5, mouseX +5, mouseY -5);
+      strokeWeight(3);
+      line(mouseX - size/2, mouseY +size/2, mouseX +size/2, mouseY -size/2);
       pop();
     }
     else if (type === "fancyLeft") {
       push();
       stroke(colPick.value());
-      strokeWeight(size);
-      line(mouseX - 5, mouseY -5, mouseX +5, mouseY +5);
+      strokeWeight(3);
+      line(mouseX - size/2, mouseY -size/2, mouseX +size/2, mouseY +size/2);
       pop();
     }
   }
@@ -98,10 +94,14 @@ function radioSet() {
 
 function colouring() {
   //Background picker
-  backPick = createColorPicker("#f8f8ff");
+  backPick = createColorPicker("#eeeeee");
   backPick.position(200, 20);
 
   //Pen picker
-  colPick = createColorPicker("#eeeeee");
+  colPick = createColorPicker("#A4AEF9");
   colPick.position(260, 20);
+}
+
+function cleared() {
+  background(backPick.value());
 }

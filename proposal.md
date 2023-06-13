@@ -7,14 +7,14 @@
 ## Needs to Have
 
 - canvas capabilities
-    - you start by selecting the canvas size, then can alter it.
-    - if you reduce the canvas to not include a drawing, drawing will be deleted and will not appear if extended again
+    - you start by selecting the canvas size
+    canvas is rigid and cannot be changed
 - draw
     - draw on the canvas
 - erase 
-    - deletes the drawings that exist in the space of the curser
+    - Draws over what's there in the current background cover
 - the ability to save (simple screenshot of canvas)
-    function in pf that saves the canvas, *saveCanvas()*
+    when you right click on the canvas, there is a option to save it
 - different art tools
     - different things drawn depending on which radio option is selected
 

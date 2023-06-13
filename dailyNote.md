@@ -148,3 +148,8 @@ objects self made are tied to canvas 0, 0
 
 ## June 12
 - created canvas clear
+- teach talked about fav-icon
+
+## June 13
+- got canvas clear working
+- added favicon and page title
